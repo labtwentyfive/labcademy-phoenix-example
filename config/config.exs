@@ -5,6 +5,16 @@
 # is restricted to this project.
 use Mix.Config
 
+config :labcademy, Labcademy.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  database: "labcademy_repo",
+  username: "ms2",
+  password: "",
+  hostname: "localhost"
+
+config :labcademy,
+  ecto_repos: [Labcademy.Repo]
+
 # Configures the endpoint
 config :labcademy, LabcademyWeb.Endpoint,
   url: [host: "localhost"],
