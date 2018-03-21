@@ -19,6 +19,8 @@ defmodule LabcademyWeb.Router do
     get "/", PageController, :index
     get "/form", FormController, :index
     post "/form", FormController, :create
+
+    get "/users", UserController, :index
   end
 
   # Other scopes may use custom stacks.
