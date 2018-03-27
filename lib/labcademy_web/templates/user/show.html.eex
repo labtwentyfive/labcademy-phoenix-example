@@ -1,0 +1,1 @@
+<p>Du schaust dir User <%= @user.name%> an.</p>
